@@ -1,0 +1,8 @@
+$background-color: #bfbfbf;
+$color: #242424;
+
+[class^="col-"] {
+	background-color: $background-color;
+	color: $color;
+	min-height: 50px;
+}

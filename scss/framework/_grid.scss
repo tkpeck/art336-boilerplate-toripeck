@@ -1,0 +1,104 @@
+/*
+12 column mobile first grid system
+*/
+
+// grid variables
+$desktop: 1140px;
+$tablet: 768px;
+$mobile: 550px;
+$gutter: 14px;
+$padding: 6px;
+
+.row {
+	margin: 0 auto;
+	max-width: $desktop;
+	width: 100%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class^="col-"] {
+	float: left;
+	width: 100%;
+}
+
+.row [class^="col-"] {
+	@media only screen and (min-width: $tablet) {
+		margin-left: $gutter/2;
+		margin-right: $gutter/2;
+	}
+}
+
+.row .col-1 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(8.333333% - #{$gutter});
+	}
+}
+
+.row .col-2 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(16.666666% - #{$gutter});
+	}
+}
+
+.row .col-3 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(25% - #{$gutter});
+	}
+}
+
+.row .col-4 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(33.333333% - #{$gutter});
+	}
+}
+.row .col-5 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(41.666666% - #{$gutter});
+	}
+}
+
+.row .col-6 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(50% - #{$gutter});
+	}
+}
+
+.row .col-7 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(58.333333% - #{$gutter});
+	}
+}
+
+.row .col-8 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(66.666666% - #{$gutter});
+	}
+}
+
+.row .col-9 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(75% - #{$gutter});
+	}
+}
+
+.row .col-10 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(83.333333% - #{$gutter});
+	}
+}
+.row .col-11 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(91.666666% - #{$gutter});
+	}
+}
+
+.row .col-12 {
+	@media only screen and (min-width: $tablet) {
+		width: calc(100% - #{$gutter});
+	}
+}
