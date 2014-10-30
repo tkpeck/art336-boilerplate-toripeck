@@ -9,13 +9,14 @@ $mobile: 550px;
 $gutter: 14px;
 $padding: 6px;
 
-.row {
+// common to all grids
+.row, .row-no-gutter {
 	margin: 0 auto;
 	max-width: $desktop;
 	width: 100%;
 }
 
-.row:after {
+.row:after, .row-no-gutter:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -23,9 +24,11 @@ $padding: 6px;
 
 [class^="col-"] {
 	float: left;
+	margin-bottom: $gutter;
 	width: 100%;
 }
 
+// grid with vertical gutters
 .row [class^="col-"] {
 	@media only screen and (min-width: $tablet) {
 		margin-left: $gutter/2;
@@ -101,4 +104,102 @@ $padding: 6px;
 	@media only screen and (min-width: $tablet) {
 		width: calc(100% - #{$gutter});
 	}
+}
+
+// grid without vertical gutters
+.row-no-gutter {
+	@media only screen and (min-width: $tablet) {
+		box-sizing: border-box;
+		padding-left: $gutter/2;
+		padding-right: $gutter/2;
+	}
+}
+
+.row-no-gutter .col-1 {
+	@media only screen and (min-width: $tablet) {
+		width: 8.333333%;
+	}
+}
+
+.row-no-gutter .col-2 {
+	@media only screen and (min-width: $tablet) {
+		width: 16.666666%;
+	}
+}
+
+.row-no-gutter .col-3 {
+	@media only screen and (min-width: $tablet) {
+		width: 25%;
+	}
+}
+
+.row-no-gutter .col-4 {
+	@media only screen and (min-width: $tablet) {
+		width: 33.333333%;
+	}
+}
+.row-no-gutter .col-5 {
+	@media only screen and (min-width: $tablet) {
+		width: 41.666666%;
+	}
+}
+
+.row-no-gutter .col-6 {
+	@media only screen and (min-width: $tablet) {
+		width: 50%;
+	}
+}
+
+.row-no-gutter .col-7 {
+	@media only screen and (min-width: $tablet) {
+		width: 58.333333%;
+	}
+}
+
+.row-no-gutter .col-8 {
+	@media only screen and (min-width: $tablet) {
+		width: 66.666666%;
+	}
+}
+
+.row-no-gutter .col-9 {
+	@media only screen and (min-width: $tablet) {
+		width: 75%;
+	}
+}
+
+.row-no-gutter .col-10 {
+	@media only screen and (min-width: $tablet) {
+		width: 83.333333%;
+	}
+}
+.row-no-gutter .col-11 {
+	@media only screen and (min-width: $tablet) {
+		width: 91.666666%;
+	}
+}
+
+.row-no-gutter .col-12 {
+	@media only screen and (min-width: $tablet) {
+		width: 100%;
+	}
+}
+
+// grid defualt modifiers
+.no-bottom-gutter [class^="col-"] {
+	margin-bottom: 0;
+}
+
+.outer {
+	width: 100%;
+	margin-bottom: $gutter;
+}
+
+.outer .row:last-of-type [class^="col-"],
+.outer .row-no-gutter:last-of-type [class^="col-"] {
+	margin-bottom: 0;
+}
+
+.shift-right {
+	float: right;
 }
