@@ -22,6 +22,8 @@
 }());
 
 // Place any jQuery/helper plugins below this line.
+// Add extra / so /@prepros- becomes //@prepros- to activate plugin
 
-/* //@prepros-append vendor/webfont.js */
-/* //@prepros-append vendor/bigtext.js */
+// /@prepros-append vendor/webfont.js
+// /@prepros-append vendor/equal-height.js
+// /@prepros-append vendor/bigtext.js

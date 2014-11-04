@@ -1,205 +1,230 @@
 /*
-12 column mobile first grid system
+12 Column Mobile First Grid System
 */
 
-// grid variables
+// Grid Variables
 $desktop: 1140px;
 $tablet: 768px;
 $mobile: 550px;
 $gutter: 14px;
 $padding: 6px;
 
-// common to all grids
+// Common to all grids
 .row, .row-no-gutter {
-	margin: 0 auto;
-	max-width: $desktop;
-	width: 100%;
+    margin: 0 auto;
+    max-width: $desktop;
+    width: 100%;
 }
 
 .row:after, .row-no-gutter:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 [class^="col-"] {
-	float: left;
-	margin-bottom: $gutter;
-	width: 100%;
+    float: left;
+    margin-bottom: $gutter;
+    width: 100%;
 }
 
-// grid with vertical gutters
+// Columns with verticle gutters
 .row [class^="col-"] {
-	@media only screen and (min-width: $tablet) {
-		margin-left: $gutter/2;
-		margin-right: $gutter/2;
-	}
+    @media only screen and (min-width: $tablet) {
+        margin-left: $gutter/2;
+        margin-right: $gutter/2;
+    }
 }
 
 .row .col-1 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(8.333333% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(8.333333% - #{$gutter});   
+    }
 }
 
 .row .col-2 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(16.666666% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(16.666666% - #{$gutter});   
+    }
 }
 
 .row .col-3 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(25% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(25% - #{$gutter});   
+    }
 }
 
 .row .col-4 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(33.333333% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(33.333333% - #{$gutter});   
+    }
 }
+
 .row .col-5 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(41.666666% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(41.666666% - #{$gutter});   
+    }
 }
 
 .row .col-6 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(50% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(50% - #{$gutter});   
+    }
 }
 
 .row .col-7 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(58.333333% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(58.333333% - #{$gutter});   
+    }
 }
 
 .row .col-8 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(66.666666% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(66.666666% - #{$gutter});   
+    }
 }
 
 .row .col-9 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(75% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(75% - #{$gutter});   
+    }
 }
 
 .row .col-10 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(83.333333% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(83.333333% - #{$gutter});   
+    }
 }
+
 .row .col-11 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(91.666666% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(91.666666% - #{$gutter});   
+    }
 }
 
 .row .col-12 {
-	@media only screen and (min-width: $tablet) {
-		width: calc(100% - #{$gutter});
-	}
+    @media only screen and (min-width: $tablet) {
+        width: calc(100% - #{$gutter});   
+    }
 }
 
-// grid without vertical gutters
+// Columns without verticle gutters
 .row-no-gutter {
-	@media only screen and (min-width: $tablet) {
-		box-sizing: border-box;
-		padding-left: $gutter/2;
-		padding-right: $gutter/2;
-	}
+    @media only screen and (min-width: $tablet) { 
+        box-sizing: border-box;
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+    }
 }
 
 .row-no-gutter .col-1 {
-	@media only screen and (min-width: $tablet) {
-		width: 8.333333%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 8.3333333%;
+    }
 }
 
 .row-no-gutter .col-2 {
-	@media only screen and (min-width: $tablet) {
-		width: 16.666666%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 16.666666%;
+    }
 }
 
 .row-no-gutter .col-3 {
-	@media only screen and (min-width: $tablet) {
-		width: 25%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 25%;
+    }
 }
 
 .row-no-gutter .col-4 {
-	@media only screen and (min-width: $tablet) {
-		width: 33.333333%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 33.333333%;
+    }
 }
+
 .row-no-gutter .col-5 {
-	@media only screen and (min-width: $tablet) {
-		width: 41.666666%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 41.666666%;
+    }
 }
 
 .row-no-gutter .col-6 {
-	@media only screen and (min-width: $tablet) {
-		width: 50%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 50%;
+    }
 }
 
 .row-no-gutter .col-7 {
-	@media only screen and (min-width: $tablet) {
-		width: 58.333333%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 58.3333333%;
+    }
 }
 
 .row-no-gutter .col-8 {
-	@media only screen and (min-width: $tablet) {
-		width: 66.666666%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 66.666666%;
+    }
 }
 
 .row-no-gutter .col-9 {
-	@media only screen and (min-width: $tablet) {
-		width: 75%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 75%;
+    }
 }
 
 .row-no-gutter .col-10 {
-	@media only screen and (min-width: $tablet) {
-		width: 83.333333%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 83.3333333%;
+    }
 }
+
 .row-no-gutter .col-11 {
-	@media only screen and (min-width: $tablet) {
-		width: 91.666666%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 91.666666%;
+    }
 }
 
 .row-no-gutter .col-12 {
-	@media only screen and (min-width: $tablet) {
-		width: 100%;
-	}
+    @media only screen and (min-width: $tablet) {
+        width: 100%;
+    }
 }
 
-// grid defualt modifiers
+// Grid default modifiers
 .no-bottom-gutter [class^="col-"] {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .outer {
-	width: 100%;
-	margin-bottom: $gutter;
+    width: 100%;
+    margin-bottom: $gutter;
 }
 
 .outer .row:last-of-type [class^="col-"],
 .outer .row-no-gutter:last-of-type [class^="col-"] {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .shift-right {
-	float: right;
+    float: right;
+}
+
+.vcenter {
+    width: 100%; /* Firefox needs this */
+    height: 100%; /* Height can be anything */
+    /* WebKit (Chrome & Safari) */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* IE */
+    display: -ms-box;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+    /* Native CSS */
+    display: box;
+    box-pack: center;
+    box-align: center;
 }
