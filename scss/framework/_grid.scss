@@ -208,6 +208,13 @@ $padding: 6px;
     float: right;
 }
 
+.row.padding [class^="col-"],
+.row-no-gutter.padding [class^="col-"],
+[class^="col-"].padding {
+	box-sizing: border-box;
+	padding: $padding;
+}
+
 .vcenter {
     width: 100%; /* Firefox needs this */
     height: 100%; /* Height can be anything */
@@ -227,4 +234,9 @@ $padding: 6px;
     display: box;
     box-pack: center;
     box-align: center;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
 }
