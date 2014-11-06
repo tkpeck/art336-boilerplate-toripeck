@@ -1,11 +1,11 @@
 // Equal Height Initialize
-//$(window).load(function() {
-//    equalheight('.equal-height');
-//});
-//
-//$(window).resize(function(){
-//    equalheight('.equal-height');
-//});
+$(window).load(function() {
+    equalheight('.equal-height');
+});
+
+$(window).resize(function(){
+    equalheight('.equal-height');
+});
 
 
 // Fixed Header Height Offset Initialize

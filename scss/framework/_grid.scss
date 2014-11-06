@@ -236,7 +236,22 @@ $padding: 6px;
     box-align: center;
 }
 
+.text-right {
+	text-align: right;
+}
+
 .fixed {
 	position: fixed;
 	width: 100%;
+}
+
+@media screen and (max-width: $tablet) {
+	.row .fixed-nav {
+		position: absolute;
+		top: 0;
+	}
+}
+
+.fixed-clear {
+	padding-top: $gutter;
 }

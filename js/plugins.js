@@ -25,5 +25,5 @@
 // Add extra / so /@prepros- becomes //@prepros- to activate plugin
 
 // /@prepros-append vendor/webfont.js
-// /@prepros-append vendor/equal-height.js
+//@prepros-append vendor/equal-height.js
 // /@prepros-append vendor/bigtext.js
