@@ -199,6 +199,10 @@ $padding: 6px;
     margin-bottom: $gutter;
 }
 
+.outer.no-bottom-gutter {
+	margin-bottom: 0;
+}
+
 .outer .row:last-of-type [class^="col-"],
 .outer .row-no-gutter:last-of-type [class^="col-"] {
     margin-bottom: 0;
